@@ -3,7 +3,8 @@
 }
 body{
     /* rgb(29, 26, 37) */
-    background-color: rgb(10, 7, 19);
+    background-color: rgb(20, 14, 37);
+    background-image: linear-gradient(to top,rgba(255, 255, 255, 0.04), transparent);
 }
 .Glowne{
     display: flex;
@@ -21,7 +22,7 @@ main{
     width: 50%;
     height: 50%;
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 25%;
     text-align: center;
     align-content: center;
