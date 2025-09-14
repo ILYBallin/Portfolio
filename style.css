@@ -32,40 +32,37 @@ span{
     color: rgb(125, 190, 147);
     text-shadow: 0 0 10px ;
 }
-#GL{
+.strony{
     position: absolute;
     top: 0;
     width: 800px;
     height: 400px;
     background-color: rgba(0, 0, 0, 0.2);
     clip-path: path("M 0 0 L 720 0 Q 720 60, 620 100 Q 540 220, 370 180 Q 320 270, 170 260 Q 120 370, 0 370 Z");
-
+}
+.strony::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 800px;
+    height: 400px;
+    clip-path: path("M 0 0 L 700 0 Q 700 50, 600 80 Q 520 200, 350 150 Q 300 250, 150 240 Q 110 350, 0 350 Z");
+}
+.strony:hover{
+    width: 1500px;
+    height: 700px;
+    clip-path: path("M 0 0 L 1200 0 Q 1400 100, 1350 150 Q 1200 300 ,1000 400 Q 800 600, 700 500 Q 400 600 ,0 600 Z");
+}
+#GL{
+    left: 0;
 }
 #GL::before{
-    content: " ";
-    position: absolute;
-    top: 0;
-    width: 800px;
-    height: 400px;
     background-color: rgb(86, 212, 160);
-    clip-path: path("M 0 0 L 700 0 Q 700 50, 600 80 Q 520 200, 350 150 Q 300 250, 150 240 Q 110 350, 0 350 Z");
 }
 #GP{
-    position: absolute;
-    top: 0;
     right: 0;
     transform: rotateY(180deg);
-    width: 800px;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.2);
-    clip-path: path("M 0 0 L 720 0 Q 720 60, 620 100 Q 540 220, 370 180 Q 320 270, 170 260 Q 120 370, 0 370 Z");
 }
 #GP::before{
-    content: " ";
-    position: absolute;
-    top: 0;
-    width: 800px;
-    height: 400px;
     background-color: rgb(102, 39, 202);
-    clip-path: path("M 0 0 L 700 0 Q 700 50, 600 80 Q 520 200, 350 150 Q 300 250, 150 240 Q 110 350, 0 350 Z");
 }
