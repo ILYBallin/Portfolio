@@ -1,5 +1,6 @@
 *{
     margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif1;
 }
 body{
     /* rgb(29, 26, 37) */
@@ -16,7 +17,6 @@ body{
 main{
     color: white;
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif1;
     /* background-color: rgba(80, 77, 77, 0.1);
     border-radius: 20px;
     box-shadow: 20px 20px rgba(0, 0, 0, 0.2); */
@@ -33,34 +33,40 @@ span{
     color: rgb(125, 190, 147);
     text-shadow: 0 0 10px ;
 }
+.chmury{
+    z-index: 1;
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    clip-path: path("M 0 0 L 720 0 Q 720 60, 620 100 Q 540 220, 370 180 Q 320 270, 170 260 Q 120 370, 0 370 Z");
+    transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease;
+}
+#Graphic{
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
 .strony{
+    --sciezka: path("M 0 0 L 700 0 Q 700 50, 600 80 Q 520 200, 350 150 Q 300 250, 150 240 Q 110 350, 0 350 Z");
+    --szerok:800px;
+    --wysok:400px;
+
     z-index: 1;
     position: absolute;
     width: 800px;
     height: 400px;
     background-color: rgba(0, 0, 0, 0.2);
     clip-path: path("M 0 0 L 720 0 Q 720 60, 620 100 Q 540 220, 370 180 Q 320 270, 170 260 Q 120 370, 0 370 Z");
-    transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease, filter 0.3s ease;
+    transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease;
 }
 .strony::before{
     content: " ";
     position: absolute;
     top: 0;
-    width: 800px;
-    height: 400px;
-    clip-path: path("M 0 0 L 700 0 Q 700 50, 600 80 Q 520 200, 350 150 Q 300 250, 150 240 Q 110 350, 0 350 Z");
-    transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease, filter 0.3s ease;
-}
-.strony:hover{
-    z-index: 2;   
-    width: 1400px;
-    height: 700px;
-    clip-path: path("M 0 0 L 1200 0 Q 1300 75, 1200 150 Q 1200 450 ,900 450 Q 700 650, 400 500 Q 250 600 ,0 600 Z");
-}
-.strony:hover::before{
-    width: 1400px;
-    height: 700px;
-    clip-path: path("M 0 0 L 1180 0 Q 1280 65, 1170 140 Q 1180 430 ,880 420 Q 680 630, 400 470 Q 230 580 ,0 580 Z");
+    width: var(--szerok);
+    height: var(--wysok);
+    clip-path: var(--sciezka);
+    transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease;
 }
 #GL{
     top: 0;
@@ -77,27 +83,26 @@ span{
 #GP::before{
     background-color: rgb(102, 39, 202);
 }
-#DP{
-    right: 0;
-    bottom: 0;
-    transform: rotate(180deg);
-}
 #DP::before{
     background-color: aliceblue;
 }
-/* .gwiazdy{
-    position: relative;
-    width: 50px;
-    height: 50px;
-    top: 50%;
-    left: 30%;
-    background-color: white;
-    clip-path: path("M 25 0 Q 25 25, 50 25 Q 25 25, 25 50 Q 25 25, 0 25 Q 25 25, 25 0 Z");
-    animation: gwiazdy 2s linear infinite alternate;
+.naglowki{
+    opacity: 1;
+    transform: rotate(180deg);
+    font-weight: bolder;
+    font-size: 70px;
+    z-index: 3;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    transition: top 1.5s ease, left 1.5s ease;
 }
-
-@keyframes gwiazdy {
-    to{
-        transform: scale(0.7);
-    }
-} */
+.chmury p:not(.naglowki){
+    transform: rotate(180deg);
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s ease 1s;
+}
