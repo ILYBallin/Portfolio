@@ -11,14 +11,15 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 main{
     color: white;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif1;
-    /* background-color: rgba(80, 77, 77, 0.1); */
-    /* border-radius: 20px; */
-    /* box-shadow: 20px 20px rgba(0, 0, 0, 0.2); */
+    /* background-color: rgba(80, 77, 77, 0.1);
+    border-radius: 20px;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.2); */
     width: 50%;
     height: 50%;
     position: absolute;
@@ -33,12 +34,13 @@ span{
     text-shadow: 0 0 10px ;
 }
 .strony{
+    z-index: 1;
     position: absolute;
-    top: 0;
     width: 800px;
     height: 400px;
     background-color: rgba(0, 0, 0, 0.2);
     clip-path: path("M 0 0 L 720 0 Q 720 60, 620 100 Q 540 220, 370 180 Q 320 270, 170 260 Q 120 370, 0 370 Z");
+    transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease, filter 0.3s ease;
 }
 .strony::before{
     content: " ";
@@ -47,22 +49,48 @@ span{
     width: 800px;
     height: 400px;
     clip-path: path("M 0 0 L 700 0 Q 700 50, 600 80 Q 520 200, 350 150 Q 300 250, 150 240 Q 110 350, 0 350 Z");
+    transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease, filter 0.3s ease;
 }
 .strony:hover{
-    width: 1500px;
+    z-index: 2;   
+    width: 1400px;
     height: 700px;
-    clip-path: path("M 0 0 L 1200 0 Q 1400 100, 1350 150 Q 1200 300 ,1000 400 Q 800 600, 700 500 Q 400 600 ,0 600 Z");
+    clip-path: path("M 0 0 L 1200 0 Q 1300 75, 1200 150 Q 1300 500 ,900 450 Q 700 650, 400 500 Q 250 600 ,0 600 Z");
+}
+.strony:hover::before{
+    width: 1400px;
+    height: 700px;
+    clip-path: path("M 0 0 L 1180 0 Q 1280 65, 1170 140 Q 1280 480 ,880 420 Q 680 630, 400 470 Q 230 580 ,0 580 Z");
 }
 #GL{
+    top: 0;
     left: 0;
 }
 #GL::before{
     background-color: rgb(86, 212, 160);
 }
 #GP{
+    top: 0;
     right: 0;
     transform: rotateY(180deg);
 }
 #GP::before{
     background-color: rgb(102, 39, 202);
+}
+#DP{
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+#DP::before{
+    background-color: aliceblue;
+}
+.gwiazdy{
+    position: relative;
+    top: 40%;
+    left: 30%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    clip-path: path("M 25 0 Q 25 25, 50 25 Q 25 25, 25 50 Q 25 25, 0 25 Q 25 25, 25 0 Z");
 }
