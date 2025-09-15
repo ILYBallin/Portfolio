@@ -48,7 +48,7 @@ for(let i = 0; i < chmury.length;i++){
         akapity[0].style.left = "3%";
         for(let z = 1; z < akapity.length;z++){
             akapity[z].style.opacity = 0;
-            akapity[z].style.transition = "opacity 0.5s ease ";
+            akapity[z].style.transition = "opacity 0.2s ease ";
         }
     })
 }
