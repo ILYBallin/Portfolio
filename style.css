@@ -1,10 +1,11 @@
 *{
+    color: white;
     margin:0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif1;
 }
 body{
     /* rgb(29, 26, 37) */
-    background-color: rgb(20, 14, 37);
+    background-color: rgb(14, 14, 37);
     background-image: linear-gradient(to top,rgba(255, 255, 255, 0.04), transparent);
 }
 .Glowne{
@@ -29,8 +30,18 @@ main{
     align-content: center;
     text-shadow:0 0 10px white ;
 }
+/* h1::before{
+    filter: blur(50px);
+    content: "";
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.062);
+} */
 span{
-    color: rgb(125, 190, 147);
+    color: rgb(125, 190, 144);
     text-shadow: 0 0 10px ;
 }
 .chmury{
@@ -60,11 +71,12 @@ span{
     position: absolute;
     width: 800px;
     height: 400px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.212);
     clip-path: path("M 0 0 L 720 0 Q 720 60, 620 100 Q 540 220, 370 180 Q 320 270, 170 260 Q 120 370, 0 370 Z");
     transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease;
 }
 .strony::before{
+    background-color: rgb(32, 30, 44);
     content: " ";
     position: absolute;
     top: 0;
@@ -73,15 +85,15 @@ span{
     clip-path: var(--sciezka);
     transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease;
 }
-#GL::before{
+/* #GL::before{
     background-color: rgb(86, 212, 160);
 }
 #GP::before{
     background-color: rgb(102, 39, 202);
 }
 #DP::before{
-    background-color: aliceblue;
-}
+    background-color: rgb(12, 31, 48);
+} */
 .naglowki{
     opacity: 1;
     font-weight: bolder;
