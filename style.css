@@ -49,7 +49,7 @@ span{
 #Projects{
     top: 0;
     right: 0;
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 .strony{
     --sciezka: path("M 0 0 L 700 0 Q 700 50, 600 80 Q 520 200, 350 150 Q 300 250, 150 240 Q 110 350, 0 350 Z");
