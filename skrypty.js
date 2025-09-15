@@ -14,6 +14,7 @@ for(let i = 0; i < chmury.length;i++){
         chmury[i].style.width = witdhBig;
         chmury[i].style.height = heightBig;
         chmury[i].style["clip-path"] = 'path("M 0 0 L 1200 0 Q 1300 75, 1200 150 Q 1200 450 ,900 450 Q 700 650, 400 500 Q 250 600 ,0 600 Z")';
+        chmury[i].style["z-index"] = 2;
         bloki[0].style.setProperty("--sciezka",'path("M 0 0 L 1180 0 Q 1270 75, 1170 140 Q 1180 430 ,880 420 Q 680 630, 400 470 Q 230 580 ,0 580 Z")');
         bloki[0].style.setProperty("--szerok",witdhBig);
         bloki[0].style.setProperty("--wysok",heightBig);
@@ -38,6 +39,7 @@ for(let i = 0; i < chmury.length;i++){
         chmury[i].style.width = widthTiny;
         chmury[i].style.height = heightTiny;
         chmury[i].style["clip-path"] = 'path("M 0 0 L 720 0 Q 720 60, 620 100 Q 540 220, 370 180 Q 320 270, 170 260 Q 120 370, 0 370 Z")';
+        chmury[i].style["z-index"] = 1;
         bloki[0].style.setProperty("--sciezka",'path("M 0 0 L 700 0 Q 700 50, 600 80 Q 520 200, 350 150 Q 300 250, 150 240 Q 110 350, 0 350 Z")');
         bloki[0].style.setProperty("--szerok",widthTiny)
         bloki[0].style.setProperty("--wysok",heightTiny)
