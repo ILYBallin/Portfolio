@@ -21,15 +21,15 @@ for(let i = 0; i < chmury.length;i++){
         bloki[0].style["clip-path"] = 'path("M 0 0 L 1200 0 Q 1300 75, 1200 150 Q 1200 450 ,900 450 Q 700 650, 400 500 Q 250 600 ,0 600 Z")';
         bloki[0].style.width = witdhBig;
         bloki[0].style.height = heightBig;
-        akapity[0].style.top = "50%";
-        akapity[0].style.left = "20%";
+        akapity[0].style.top = "10%";
+        akapity[0].style.left = "30%";
         let x = 45;
         let y = 35;
         for(let z = 1; z < akapity.length;z++){
             akapity[z].style.top = x+"%";
             akapity[z].style.left = y+"%";
             akapity[z].style.opacity = 1;
-            akapity[z].style.transition = "opacity 0.2s ease 1s";
+            akapity[z].style.transition = "opacity 0.5s ease 1s";
             x = x - 5;
         }
     })

@@ -73,10 +73,6 @@ span{
     clip-path: var(--sciezka);
     transition: clip-path 1.5s ease, width 1.5s ease, height 1.5s ease, z-index 1.5s ease;
 }
-#GL{
-    top: 0;
-    left: 0;
-}
 #GL::before{
     background-color: rgb(86, 212, 160);
 }
@@ -88,7 +84,6 @@ span{
 }
 .naglowki{
     opacity: 1;
-    transform: rotate(180deg);
     font-weight: bolder;
     font-size: 70px;
     z-index: 3;
@@ -96,6 +91,12 @@ span{
     top: 5%;
     left: 3%;
     transition: top 1.5s ease, left 1.5s ease;
+}
+#Graphic .naglowki{
+    transform: rotate(-180deg);
+}
+#Projects .naglowki{
+    transform: rotateY(-180deg);
 }
 .chmury p:not(.naglowki){
     transform: rotate(180deg);
