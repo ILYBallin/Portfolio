@@ -80,11 +80,6 @@ span{
 #GL::before{
     background-color: rgb(86, 212, 160);
 }
-#GP{
-    top: 0;
-    right: 0;
-    transform: rotateY(180deg);
-}
 #GP::before{
     background-color: rgb(102, 39, 202);
 }
