@@ -1,10 +1,36 @@
+.holder{
+    --onie: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: auto;
+    clip-path: var(--onie);
+}
 .slowa{
+    font-family: American Typewriter, serif;
+    font-size: 150px;
     line-height: 1;
     margin: 0;
-    font-size: 100px;
+}
+.litera{
+    display: inline-block;
+    --delay: 0s;
+    margin: 0;
+    color: rgb(255, 255, 255);
     font-variant: small-caps;
     font-weight: bolder;
+    transform: translateY(110%);
+    animation: wychodzenie 1s ease;
+    animation-delay: var(--delay);
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.39,.97,.68,1.46);
 }
-.holder{
-    height: auto;
+
+@keyframes wychodzenie{
+    from{
+        transform: translateY(110%);
+    }
+    to{
+        transform:  translateY(0px);
+    }
 }
+
+
+

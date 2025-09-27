@@ -1,6 +1,6 @@
 .glownyTekst{
-    width: 35vw;
-    height: 150px;
+    width: 50vw;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
