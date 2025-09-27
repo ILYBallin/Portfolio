@@ -1,0 +1,8 @@
+.glownyTekst{
+    width: 35vw;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: transparent;
+}

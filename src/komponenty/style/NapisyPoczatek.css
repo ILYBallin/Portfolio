@@ -1,0 +1,10 @@
+.slowa{
+    line-height: 1;
+    margin: 0;
+    font-size: 100px;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+.holder{
+    height: auto;
+}
