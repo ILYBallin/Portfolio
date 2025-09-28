@@ -1,0 +1,33 @@
+.pasek{
+    --margin: 5%;
+    height: 80px;
+    color: black;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: calc(100% - (2 * var(--margin)));
+    margin: 0 var(--margin);
+    position: fixed;
+    border-bottom: 2px rgb(83, 82, 82) solid;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: wchodzenie 1s ease 3.2s forwards;
+    z-index: 5;
+}
+.menu{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-variant: small-caps;
+    font-weight: 900;
+}
+
+@keyframes wchodzenie{
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,14 @@
+.karta{
+    position: relative;
+    text-align: left;
+    color: black;
+    padding: 15px;
+    font-variant: small-caps;
+    font-size: 20px;
+    border-radius: 20px; 
+    /* border: 1px black solid; */
+    max-width: 450px;
+    margin-top: 50px;
+    scale: 1;
+    height: auto;
+}

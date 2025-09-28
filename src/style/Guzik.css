@@ -1,0 +1,19 @@
+.guzik{
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 20px;
+    padding: 20px;
+    width: 100px;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guzik:hover{
+    font-size: x-large;   
+    margin: 0;
+    width: 130px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom: rgb(133, 186, 218) 4px solid;
+}

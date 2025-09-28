@@ -9,12 +9,15 @@
 }
 
 .poczatekTlo{
+    position: fixed;
     display: flex;
     align-items: center;
     width: 100vw;
     height: 100vh;
     background-color: rgb(7, 7, 7);
     animation: znikanie 0.5s linear 2.7s 1 forwards;
+    z-index: 5;
+    overflow: hidden;
 }
 
 @keyframes znikanie {

@@ -6,43 +6,38 @@
     clip-path: var(--onie);
     animation: yeet 1.5s ease 2s 1 forwards;
 }
-.holder.niewidac{
-    visibility: hidden ;
-}
 .slowa{
-    font-family: American Typewriter, serif;
     font-size: 150px;
     line-height: 1;
     margin: 0;
 }
-.litera.widac{
-    display: inline-block;
-    margin: 0;
-    color: rgb(255, 255, 255);
-    transform: translateX(0px);
-    font-variant: small-caps;
-    font-weight: bolder;
-}
 .litera{
     display: inline-block;
-    --delay: 0.5s;
+    --delay: 0.2s;
     margin: 0;
     color: rgb(255, 255, 255);
     font-variant: small-caps;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     transform: translateY(110%);
-    animation: wychodzenie 1s ease forwards;
+    animation: wychodzenie 0.7s ease;
     animation-delay: var(--delay);
     animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.39,.97,.68,1.46);
+    animation-timing-function: cubic-bezier(.49,.79,.21,1.42) ;
+    /* cubic-bezier(.39,.97,.68,1.46) */
+    /* cubic-bezier(.49,.79,.21,1.42) */
 }
 
 @keyframes wychodzenie{
     from{
         transform: translateY(110%);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
     }
     to{
         transform:  translateY(0px);
+        opacity: 1;
     }
 }
 

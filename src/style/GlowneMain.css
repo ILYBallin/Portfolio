@@ -1,0 +1,13 @@
+p{
+    text-align: left;
+}
+.glowneOkno{
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 80%;
+}
+.Info{
+    display: flex;
+    justify-content: space-around;
+}
