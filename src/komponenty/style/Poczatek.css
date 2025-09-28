@@ -1,8 +1,25 @@
-.glownyTekst{
+.poczatekTekst{
+    margin: 0 auto;
     width: 50vw;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: transparent;
+}
+
+.poczatekTlo{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(7, 7, 7);
+    animation: znikanie 0.5s linear 2.7s 1 forwards;
+}
+
+@keyframes znikanie {
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
 }

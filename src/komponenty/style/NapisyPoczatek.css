@@ -4,7 +4,7 @@
     --onie: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     height: auto;
     clip-path: var(--onie);
-    animation: yeet 1.5s ease 2s 1;
+    animation: yeet 1.5s ease 2s 1 forwards;
 }
 .holder.niewidac{
     visibility: hidden ;
@@ -31,7 +31,7 @@
     font-variant: small-caps;
     font-weight: bolder;
     transform: translateY(110%);
-    animation: wychodzenie 1s ease;
+    animation: wychodzenie 1s ease forwards;
     animation-delay: var(--delay);
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(.39,.97,.68,1.46);
