@@ -1,7 +1,13 @@
 .holder{
+    --translateX: 0;
+    --translateY: 0;
     --onie: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     height: auto;
     clip-path: var(--onie);
+    animation: yeet 1.5s ease 2s 1;
+}
+.holder.niewidac{
+    visibility: hidden ;
 }
 .slowa{
     font-family: American Typewriter, serif;
@@ -9,9 +15,17 @@
     line-height: 1;
     margin: 0;
 }
+.litera.widac{
+    display: inline-block;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    transform: translateX(0px);
+    font-variant: small-caps;
+    font-weight: bolder;
+}
 .litera{
     display: inline-block;
-    --delay: 0s;
+    --delay: 0.5s;
     margin: 0;
     color: rgb(255, 255, 255);
     font-variant: small-caps;
@@ -32,5 +46,14 @@
     }
 }
 
+@keyframes yeet {
+    50%{
+        transform: rotate(-45deg);
+    }
+    to{
+        transform: translate(var(--translateX),var(--translateY)) rotate(-45deg);
+        visibility: hidden;
+    }
+}
 
 
