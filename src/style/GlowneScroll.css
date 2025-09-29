@@ -17,7 +17,7 @@
     width: 300vw; 
     animation: move-x linear forwards;
     animation-timeline: view();
-    animation-range: contain 10% contain 100%;   
+    animation-range: contain 10% contain 94%;   
 }
 
 @keyframes move-x {
