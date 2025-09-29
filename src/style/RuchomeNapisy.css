@@ -11,22 +11,7 @@
     margin: 0;
     color: rgb(255, 255, 255);
     font-variant: small-caps;
-    animation: wychodzenie 0.7s cubic-bezier(.49,.79,.21,1.42) var(--delay) 1 forwards;
 }
 .litera:hover{
     scale: 1.2;
-}
-
-@keyframes wychodzenie{
-    from{
-        transform: translateY(110%);
-        opacity: 0;
-    }
-    30%{
-        opacity: 0;
-    }
-    to{
-        transform:  translateY(0px);
-        opacity: 1;
-    }
 }

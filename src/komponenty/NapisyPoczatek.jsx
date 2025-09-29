@@ -1,8 +1,7 @@
 import '../style/NapisyPoczatek.css'
+import { useState } from 'react';
 
-let delay = 0.2;
-
-function NapisyPoczatek({display, x , y}){
+function NapisyPoczatek({display, x , y, delay}){
     let listaLiter = Array.from(display)
     return (
         <div className="holder" style={{"--translateX" : x,"--translateY" : y}}> 
@@ -17,8 +16,14 @@ function NapisyPoczatek({display, x , y}){
 
 export function LiteryRuszane({litera, delay, kolor, rozmiar, czcionka}){
     let delayed = delay.toFixed(2)
+    const [klasa,useKlasa] = useState(true)
+    const zmienianieKlasy = (e)=>{
+        if (e.animationName === "wchodzenie"){
+            useKlasa(false);
+        }
+    }
     return (
-        <span className="litera" style={{"--delay": delayed+"s",color: kolor, fontSize: rozmiar, fontFamily:czcionka}}>{litera}</span>
+        <span className={`litera ${klasa ? "wejscie" : ""}`} style={{"--delay": delayed+"s",color: kolor, fontSize: rozmiar, fontFamily:czcionka}} onAnimationEnd={zmienianieKlasy}>{litera}</span>
     )
 }
 

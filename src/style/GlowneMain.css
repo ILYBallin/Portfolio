@@ -2,12 +2,47 @@ p{
     text-align: left;
 }
 .glowneOkno{
+    --padding: 10%;
     position: relative;
     top: 100px;
-    margin: 0 auto;
-    width: 80%;
+    margin: 0;
+    width: calc(100% - (2* var(--padding)));
+    padding:0 var(--padding);
+    min-height: 100vh;
 }
 .Info{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+.glowneOkno.wejscie .Info{
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: wchodzenie 0.5s ease 2.9s forwards;
+}
+.glowneOkno > *{
+    animation-name: znikanie;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.9,.73,.07,.97);
+    animation-timeline: view();
+    animation-range: 75% 90%;
+}
+
+@keyframes znikanie{
+    from{
+        opacity: 1;
+    }   
+    to{
+        opacity: 0;
+        scale: 0.9;
+        transform: translateY(-100px);
+        /* transform: perspective(800px) rotateX(80deg) translate3d(0,-100px,50px); */
+    }
+}
+
+@keyframes wchodzenie{
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

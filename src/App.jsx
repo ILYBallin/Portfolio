@@ -1,4 +1,5 @@
 import './App.css'
+import Naglowke from './komponenty/Naglowek';
 import Poczatek from './komponenty/Poczatek'
 import Glowne from './strony/Glowne';
 import Projekty from './strony/Projekty';
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       {show && <Poczatek />}
+      <Naglowke/>
       <Glowne/>
     </>
   );

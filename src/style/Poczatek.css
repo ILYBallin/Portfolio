@@ -15,14 +15,13 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(7, 7, 7);
-    animation: znikanie 0.5s linear 2.7s 1 forwards;
-    z-index: 5;
+    animation: poof 0.5s linear 2.7s 1 forwards;
+    z-index: 10;
     overflow: hidden;
 }
 
-@keyframes znikanie {
+@keyframes poof {
     to{
         opacity: 0;
-        visibility: hidden;
     }
 }

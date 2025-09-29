@@ -1,0 +1,30 @@
+.glowneScroll{
+    position: relative;
+    width: 100vw; 
+    height: 430vh;
+    clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+    background-color: rgb(16, 16, 41);  
+}
+.scrollView{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.scrollMover{
+    display: flex;
+    transform: translateX(0px); 
+    width: 300vw; 
+    animation: move-x linear forwards;
+    animation-timeline: view();
+    animation-range: contain 10% contain 100%;   
+}
+
+@keyframes move-x {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-200vw);
+  }
+}

@@ -11,7 +11,7 @@
     line-height: 1;
     margin: 0;
 }
-.litera{
+.litera.wejscie{
     display: inline-block;
     --delay: 0.2s;
     margin: 0;
@@ -19,7 +19,7 @@
     font-variant: small-caps;
     /* font-weight: bolder; */
     transform: translateY(110%);
-    animation: wychodzenie 0.7s ease;
+    animation: wchodzenie 0.7s cubic-bezier(.49,.79,.21,1.42) var(--delay) 1 forwards;
     animation-delay: var(--delay);
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(.49,.79,.21,1.42) ;
@@ -27,7 +27,7 @@
     /* cubic-bezier(.49,.79,.21,1.42) */
 }
 
-@keyframes wychodzenie{
+@keyframes wchodzenie{
     from{
         transform: translateY(110%);
         opacity: 0;

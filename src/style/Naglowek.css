@@ -1,11 +1,11 @@
 .pasek{
-    --margin: 5%;
+    --margin: 10%;
+    width: calc(100% - (2* var(--margin)));
     height: 80px;
     color: black;
     top: 0;
     display: flex;
     align-items: center;
-    width: calc(100% - (2 * var(--margin)));
     margin: 0 var(--margin);
     position: fixed;
     border-bottom: 2px rgb(83, 82, 82) solid;
