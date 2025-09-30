@@ -18,7 +18,7 @@ p{
 .glowneOkno.wejscie .Info{
     opacity: 0;
     transform: translateY(-20px);
-    animation: wchodzenie 0.5s ease 3.5s forwards;
+    animation: wchodze 0.5s ease 3.5s forwards;
 }
 .glowneOkno > *{
     animation-name: znikanie;
@@ -40,7 +40,7 @@ p{
     }
 }
 
-@keyframes wchodzenie{
+@keyframes wchodze{
     to{
         transform: translateY(0px);
         opacity: 1;
