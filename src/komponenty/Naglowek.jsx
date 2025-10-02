@@ -7,7 +7,7 @@ function Naglowke(){
             <div className="menu">
                 <Guzik text="Home"/>
                 <Guzik text="Projekty"/>
-                <Guzik text="Nigga" />
+                <Guzik text="Personal" />
             </div>
         </div>
     )
